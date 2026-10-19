@@ -1,12 +1,12 @@
 ARG CLOUDFLARE_DOCKER_REGISTRY_HOST
 
-FROM ${CLOUDFLARE_DOCKER_REGISTRY_HOST:-registry.cfdata.org}/stash/cf/debian-images/trixie/main:2026.1.0@sha256:e32092fd01520f5ae7de1fa6bb5a721720900ebeaa48e98f36f6f86168833cd7
+FROM ${CLOUDFLARE_DOCKER_REGISTRY_HOST:-registry.cfdata.org}/stash/cf/debian-images/trixie/main:2026.10.0@sha256:c9482df09ac1185c9f60174d66ae4b1536dbbda7393a19ebce572b02aafe9a99
 RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install --no-install-recommends --allow-downgrades -y \
   build-essential \
   git \
-  go-boring=1.26.4-1 \
+  go=1.27.2-1 \
   libffi-dev \
   procps \
   python3-dev \

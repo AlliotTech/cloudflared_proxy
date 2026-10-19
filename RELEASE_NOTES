@@ -1,3 +1,72 @@
+2026.10.1
+- 2026-10-13 Update gcr.io/distroless/base-debian13:nonroot-arm64 Docker digest to 538c4d6
+- 2026-10-12 TUN-10962: Add precheck diag endpoint
+- 2026-10-12 chore: Bump go to 1.27.2 to fix GO-2026-6600
+- 2026-10-12 TUN-10933: Disable CGO for Linux CI builds and add ARM64 builds
+- 2026-10-08 TUN-10933: Bump go to 1.27
+
+2026.10.0
+- 2026-09-29 VULN-141859: Normalize request path when using access rules
+- 2026-09-28 chore: Retry DNS resolution
+- 2026-09-25 chore: stabilize websocket event tests
+- 2026-08-24 TUN-10808: Cancel QUIC reads when request bodies close
+
+2026.9.3
+- 2026-09-24 chore: Update dependencies
+
+2026.9.2
+- 2026-09-24 TUN-10926: Broker JWKS cache expiration
+- 2026-09-24 TUN-10798: Harden protected Quick Tunnel CLI behavior
+- 2026-09-23 chore: Limit response size
+- 2026-09-23 chore: Protect headers before flush
+- 2026-09-23 chore: Add upper bounds to supplied emails
+- 2026-09-22 Update gcr.io/distroless/base-debian13:nonroot-amd64 Docker digest to 65795e7
+- 2026-09-22 Update gcr.io/distroless/base-debian13:nonroot Docker digest to 0896741
+- 2026-09-22 TUN-10805: Strip authentication data before forwarding requests
+- 2026-09-22 chore: Avoid logging request body
+- 2026-09-22 chore: Enable --allowed-mail flag and mac runners
+- 2026-09-21 TUN-10803: Add Quick Tunnel recipient policy
+- 2026-09-21 TUN-10803: Authorize Quick Tunnel callbacks
+- 2026-09-21 TUN-10803: Wire Quick Tunnel callback authorization
+- 2026-09-21 TUN-10804: Enforce authentication before origin access
+- 2026-09-17 chore: Fix unbounded channel
+- 2026-09-17 Revert "chore: Fix unbounded channel"
+- 2026-09-17 TUN-10802: Manage process-local authentication sessions
+- 2026-09-16 chore: Update gRPC to v1.83.1
+- 2026-09-16 TUN-10800: Wire Quick Tunnel authentication redirects
+- 2026-09-16 TUN-10801: Cache quick tunnel broker JWKS
+- 2026-09-16 TUN-10801: Validate quick tunnel broker assertions
+- 2026-09-15 TUN-10800: Add browser-bound login state
+- 2026-09-15 TUN-10800: Consume authentication callback state
+- 2026-09-14 ci: Disable macOS builds while runners are unavailable
+
+2026.9.1
+- 2026-09-10 Revert "chore: Cleanup unused transport log level"
+- 2026-09-10 chore: Add notes on breaking changes
+- 2026-09-10 chore: Mark transport-loglevel deprecated
+
+2026.9.0
+- 2026-09-08 Update gcr.io/distroless/base-debian13:nonroot-amd64 Docker digest to 1411d9a
+- 2026-09-08 Update gcr.io/distroless/base-debian13:nonroot Docker digest to d199d20
+- 2026-09-08 TUN-10738: Propagate edge registration errors over QUIC and fix supervisor error classification
+- 2026-09-08 chore: Cleanup unused transport log level
+- 2026-09-03 TUN-10799: Negotiate protected mode during Quick Tunnel provisioning
+- 2026-09-03 TUN-10834: Bump Go toolchains to 1.26.8
+- 2026-09-02 AUTH-8883 Fix Access token lock self-deadlock during same-process reauth
+- 2026-09-02 TUN-10829: Remove vendoring
+- 2026-09-01 fix(ci): use fresh clone for Windows jobs
+
+2026.8.3
+- 2026-08-28 chore: Remove stale metrics timeout TODO
+- 2026-08-28 TUN-10798: Parse Quick Tunnel allowed mail rules
+- 2026-08-27 chore: Clean up unused code
+- 2026-08-26 chore: bump gorilla/websocket for GO-2026-6278
+- 2026-08-26 VULN-142146: Update GitLab R2 token path (cloudflared-pkgs) to protected branches
+- 2026-08-26 TUN-10820: Remove test-only stdin reconnect control
+- 2026-08-26 TUN-10822: Remove fetching protocol percentage from remote
+- 2026-08-25 TUN-10725: Remove unused certificate configuration
+- 2026-08-20 chore: Update distrolesss images in amd64
+
 2026.8.2
 - 2026-08-14 VULN-141859: Revert path normalization
 
